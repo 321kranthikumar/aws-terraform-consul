@@ -10,7 +10,7 @@ echo "*** Building AWS Consul infrastructure ***"
 cd ../tf_env_aws
 
 terraform init \
-  -backend-config="bucket=tf-remote-state-gstafford" \
+  -backend-config="bucket=checkingterraformjenkins" \
   -backend-config="key=terraform_consul.tfstate" \
   -backend-config="region=us-east-1" \
   -backend=true -force-copy -get=true -input=false -no-color
